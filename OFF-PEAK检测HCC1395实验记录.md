@@ -1,8 +1,8 @@
-### OFF-PEAK检测HCC1395的12个WES
+### OFF-PEAK检测HCC1395的12对WES
 
 ###### 数据：
 
-**WES数据：** hg8-bam：/data/share/liuyuxin_tanrenjie/HCC1395_data/WES
+**WES数据：** hg38-bam：/data/share/liuyuxin_tanrenjie/HCC1395_data/WES
 
 **bed文件：**/data/share/liuyuxin_tanrenjie/HCC1395_data/reference_genome/Exome_Target_bed/S07604624_modify.bed
 
@@ -10,13 +10,12 @@
 
 **Tools文件夹：**/data/liuyuxin/Project-7-tools/OFF-PEAK-updat
 
-
-
 ###### 执行步骤：
 
 注意：bed和bam需统一chr格式
 
 ```
+cd /data/liuyuxin/Project-7-tools/OFF-PEAK-publication #无需编译、配置，直接使用脚本
 #检查bam文件chr格式
 samtools view -H WES_EA_N_1.bwa.dedup.bam | grep "^@SQ"
 ```
